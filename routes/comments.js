@@ -19,8 +19,8 @@ router.post('/comments/:placeId', (req, res, next) => {
     content: req.body.content
   });
 
-  comment.save().then(comment => {
-    res.send(comment);
+  comment.save().then(result => {
+    res.send(result);
   });
 });
 
