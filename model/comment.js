@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Types = mongoose.Types;
 
 const commentSchema = new mongoose.Schema({
-  _id: Types.ObjectId,
+  _id: String,
   placeId: String,
   content: String
 });
