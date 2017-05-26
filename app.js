@@ -9,6 +9,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use('/', index);
-app.use('/comments', comments);
+app.use('/places', comments);
 
 module.exports = app;
